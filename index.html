@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sourab - AI, machine learning, NLP, and data science portfolio." />
+    <title>Sourab | AI & Data Science</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .hero { background: radial-gradient(circle at 88% 34%, rgba(116,33,29,.17), transparent 28%), linear-gradient(110deg, transparent 0 64%, rgba(116,33,29,.05) 64% 65%, transparent 65%); }
+      .hero-contact { display:flex; gap:20px; margin-top:25px; }
+      .hero-contact a { font:500 10px 'DM Mono',monospace; letter-spacing:.04em; color:#514840; text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:4px; }
+      .portrait-wrap { filter:drop-shadow(0 18px 20px rgba(29,12,10,.25)); }
+      .portrait-wrap { width:350px; height:420px; right:34px; top:112px; display:grid; place-items:center; }
+      .portrait-frame { position:relative; inset:auto; width:310px; height:310px; padding:7px; border:1px solid var(--gold); border-radius:50%; clip-path:none; overflow:hidden; background:linear-gradient(135deg, var(--gold), #6d231e 54%, var(--ink)); box-shadow:0 0 0 10px rgba(116,33,29,.12), 0 24px 50px rgba(16,13,12,.38); }
+      .portrait-frame:after { content:''; position:absolute; inset:0; border-radius:50%; background:radial-gradient(circle at 50% 35%, transparent 25%, rgba(16,13,12,.15) 53%, rgba(16,13,12,.72) 100%); box-shadow:inset 0 -48px 45px rgba(16,13,12,.42); pointer-events:none; }
+      .portrait-frame img { border-radius:50%; object-position:50% 9%; filter:contrast(1.04) saturate(.58) brightness(.70) blur(.15px); transform:scale(1.03); }
+      .portrait-frame { background:var(--bone); }
+      .portrait-frame:after { background:radial-gradient(circle at 50% 38%, transparent 29%, rgba(16,13,12,.08) 66%, rgba(16,13,12,.30) 100%); }
+      .portrait-frame img { object-position:50% 12%; transform:scale(1.02); filter:contrast(1.02) saturate(.87) brightness(.95); mix-blend-mode:multiply; }
+      @media(max-width:840px) { .hero-contact { flex-direction:column; gap:9px; } }
+      @media(max-width:840px) { .portrait-wrap { width:205px; height:245px; right:4px; top:324px; } .portrait-frame { width:190px; height:190px; } }
+    </style>
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="nav shell">
+      <a class="brand" href="#top"><span>S</span>SOURAB</a>
+      <button class="menu" aria-label="Open navigation" aria-expanded="false">Menu</button>
+      <nav><a href="#about">About</a><a href="#projects">Chronicles</a><a href="#skills">Arsenal</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a></nav>
+    </header>
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero-copy"><p class="kicker">Aspiring AI &amp; Machine Learning Engineer</p><h1>Sourab.</h1><p class="intro">B.Tech student in Artificial Intelligence and Data Science, building practical projects in machine learning, NLP, analytics, and generative AI.</p><div class="hero-actions"><a class="button" href="#projects">Explore the work <b>→</b></a><a class="quiet-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=sourabdahiya878@gmail.com" target="_blank" rel="noreferrer">Send a raven ↗</a></div><div class="hero-contact"><a href="mailto:sourabdahiya878@gmail.com">sourabdahiya878@gmail.com</a><a href="tel:+919034129774">+91 90341 29774</a></div></div>
+        <div class="portrait-wrap"><div class="portrait-frame"><img src="assets/sourab-portrait.jpg" alt="Portrait of Sourab" /></div></div>
+        <div class="hero-facts"><div><span>Based in</span><strong>Haryana, India</strong></div><div><span>Focused on</span><strong>AI &amp; Data Science</strong></div></div>
+      </section>
+
+      <section class="about section shell" id="about"><p class="kicker">01 / The oath</p><div class="about-layout"><h2>Engineering clarity<br />from <em>complexity.</em></h2><div><p>I am a B.Tech student in Artificial Intelligence and Data Science at Panipat Institute of Engineering and Technology. My work brings together statistical thinking, exploratory data analysis, machine learning, NLP, and generative AI to create useful, understandable tools.</p><div class="stats"><div><b>7.9</b><span>CGPA</span></div><div><b>2027</b><span>Graduating</span></div><div><b>05</b><span>Projects</span></div></div></div></div></section>
+
+      <section class="projects section" id="projects"><div class="shell"><p class="kicker">02 / The chronicles</p><div class="heading-row"><h2>Selected <em>work.</em></h2><p>Five projects spanning responsible ML screening, language intelligence, generative AI, analytics, and automation.</p></div><div class="project-list">
+        <article class="project"><span class="roman">I</span><div><p class="project-meta">Machine Learning · EDA · Streamlit</p><h3>Autism Risk<br />Predictor</h3><p>Developed an ML-powered screening experience for estimating Autism Spectrum Disorder risk. The app uses the Q-CHAT-10 questionnaire with demographic and medical-history inputs, and keeps a prominent reminder that screening is not a diagnosis.</p><div class="tags"><span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>XGBoost</span><span>Streamlit</span></div><a class="launch" href="https://autism-predictor-1234.streamlit.app/" target="_blank" rel="noreferrer">Launch live app <b>↗</b></a></div></article>
+        <article class="project"><span class="roman">II</span><div><p class="project-meta">Natural Language Processing · Streamlit</p><h3>Restaurant Review<br />Sentiment Analysis</h3><p>Built an NLP application that turns restaurant reviews into positive or negative sentiment predictions. Text is cleaned, normalized, stripped of stop words while retaining negation, stemmed, vectorized with bag-of-words, and classified with Multinomial Naive Bayes.</p><div class="tags"><span>Python</span><span>NLTK</span><span>Scikit-learn</span><span>Bag of Words</span><span>Naive Bayes</span></div><a class="launch" href="https://sentiment-analysis-1234.streamlit.app/" target="_blank" rel="noreferrer">Launch live app <b>↗</b></a></div></article>
+        <article class="project"><span class="roman">III</span><div><p class="project-meta">Generative AI · LLM Application</p><h3>Health<br />Analyzer</h3><p>Created a generative-AI health assistant that reads pasted blood-work reports, extracts and flags values against supplied ranges, then produces a plain-language health summary and practical Indian diet guidance.</p><div class="tags"><span>Python</span><span>Streamlit</span><span>LangChain</span><span>Google GenAI</span><span>LLMs</span></div><p class="disclaimer">For informational support only - not a substitute for professional medical advice.</p><a class="launch" href="https://health-analysis-1234.streamlit.app/" target="_blank" rel="noreferrer">Launch live app <b>↗</b></a></div></article>
+        <article class="project"><span class="roman">IV</span><div><p class="project-meta">Data Analysis · Jul 2024</p><h3>Amazon Sales<br />Analysis System</h3><p>Analysed a large-scale Amazon sales dataset to extract useful business insights through exploratory data analysis, feature exploration, and clear visual reporting.</p><div class="tags"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span></div></div></article>
+        <article class="project"><span class="roman">V</span><div><p class="project-meta">Automation · Aug 2025</p><h3>Disaster Alert<br />System</h3><p>Designed an automated alert workflow to detect disaster events and notify users by email in real time, helping surface urgent information when timely communication matters.</p><div class="tags"><span>APIs</span><span>Alert workflows</span><span>Email notifications</span><span>Automation</span></div></div></article>
+      </div></div></section>
+
+      <section class="skills section shell" id="skills"><p class="kicker">03 / The arsenal</p><div class="skills-layout"><h2>Tools of the<br /><em>trade.</em></h2><div class="skill-columns"><div><h3>Languages</h3><p>Python · C++ · C · SQL</p><h3>Data &amp; analytics</h3><p>Exploratory data analysis · Feature engineering · Data visualization · Pandas · NumPy · Matplotlib · Seaborn</p><h3>Deployment</h3><p>Streamlit · Jupyter · Excel</p></div><div><h3>Machine learning</h3><p>Supervised &amp; unsupervised learning · Neural networks · Scikit-learn · XGBoost · PyTorch · TensorFlow</p><h3>Core foundations</h3><p>Data structures &amp; algorithms · OOP · DBMS · Operating systems · Computer networks · Probability &amp; statistics · Big data concepts</p><h3>Strengths</h3><p>Decision making · Management &amp; coordination</p></div></div></div></section>
+
+      <section class="credentials section" id="credentials"><div class="shell"><p class="kicker">04 / Seals earned</p><div class="heading-row credentials-heading"><h2>Credentials &amp;<br /><em>learning.</em></h2><p>Focused learning across AI productivity, agentic AI, data analysis, big data, and machine learning.</p></div><div class="cert-grid">
+        <a href="https://drive.google.com/file/d/1UlozQCIVvbK4TrFOImMoKnRlE8Fj7hgv/view?usp=sharing" target="_blank" rel="noreferrer"><span>2026</span><h3>Data Analysis</h3><p>IBM SkillsBuild · Turning data into insights for better decisions.</p><b>View credential ↗</b></a>
+        <a href="https://drive.google.com/file/d/1GH3_xl21mmdBTRguSskfLJI15rql5J1P/view?usp=drivesdk" target="_blank" rel="noreferrer"><span>2025</span><h3>Machine Learning</h3><p>Pickl.AI · Core predictive modelling and ML workflow concepts.</p><b>View credential ↗</b></a>
+        <a href="https://drive.google.com/file/d/1Yu4-DdefI8Gq57bWIsleOQmKoBblXrPK/view?usp=drivesdk" target="_blank" rel="noreferrer"><span>2025</span><h3>Agentic AI</h3><p>IBM SkillsBuild · Foundations of AI agents and task-oriented workflows.</p><b>View credential ↗</b></a>
+        <a href="https://drive.google.com/file/d/1dOVtRjd8Q_ip9DCSfGqoeM2SIMmDveiA/view?usp=drivesdk" target="_blank" rel="noreferrer"><span>2025</span><h3>Digital Productivity with AI</h3><p>YuWaah · Using AI tools thoughtfully for everyday productivity.</p><b>View credential ↗</b></a>
+        <a href="https://drive.google.com/file/d/1xywV4_oUTpAy1LjgYks_gw-1t49HUMhS/view?usp=drivesdk" target="_blank" rel="noreferrer"><span>2025</span><h3>Big Data Analytics</h3><p>Working with large-scale data concepts and analytical practices.</p><b>View credential ↗</b></a>
+      </div></div></section>
+
+      <section class="education shell"><div><p class="kicker">05 / The foundation</p><h2>A house built<br />to <em>learn.</em></h2></div><div class="education-detail"><span>2023 - 2027</span><h3>B.Tech in Artificial Intelligence &amp; Data Science</h3><p>Panipat Institute of Engineering and Technology<br />Haryana, India</p></div></section>
+      <section class="contact shell" id="contact"><p class="kicker">06 / The message</p><h2>Have a challenge<br />worth <em>solving?</em></h2><a class="mail" href="mailto:sourabdahiya878@gmail.com">sourabdahiya878@gmail.com <span>↗</span></a><div class="contact-links"><a href="https://github.com/SourabDahiya" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/sourab-dahiya" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="tel:+919034129774">+91 90341 29774</a></div></section>
+    </main>
+    <footer><span>© 2026 Sourab</span><span>Forged with data &amp; discipline</span></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
